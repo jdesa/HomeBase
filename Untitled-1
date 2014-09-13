@@ -1,0 +1,29 @@
+GET https://graph.api.smartthings.com/oauth/authorize?response_type=code&client_id=myclient&scope=app&redirect_uri=https%3A%2F%2Fgraph.api.smartthings.com%2Foauth%2Fcallback
+
+
+https://graph.api.smartthings.com/oauth/token?grant_type=authorization_code&client_id=03b2ef0b-e239-41e6-ac2c-4cdb70166db6&client_secret=mysecret&redirect_uri=https%3A%2F%2Fgraph.api.smartthings.com%2Foauth%2Fcallback&scope=app&code=43373fd2-8716-4137-9ce8-b35a9165e803
+
+
+GET https://graph.api.smartthings.com/oauth/authorize?response_type=code&client_id=15414a32-cf78-462f-80a4-c6627e73b13e&scope=app&redirect_uri=https%3A%2F%2Fgraph.api.smartthings.com%2Foauth%2Fcallback
+
+
+https://graph.api.smartthings.com/oauth/token?grant_type=authorization_code&client_id=15414a32-cf78-462f-80a4-c6627e73b13e&client_secret=a2f79fde-92a1-4f81-9d55-f7d1ed21448b&redirect_uri=https%3A%2F%2Fgraph.api.smartthings.com%2Foauth%2Fcallback&scope=app&code=XXXXX
+
+
+03b2ef0b-e239-41e6-ac2c-4cdb70166db6
+
+GET https://graph.api.smartthings.com/oauth/authorize?response_type=code&client_id=44aa6888-7a4c-4612-a9d2-e51f495a75e3&scope=app&redirect_uri=https%3A%2F%2Fgraph.api.smartthings.com%2Foauth%2Fcallback
+
+
+Code: 5ze3jF
+
+https://graph.api.smartthings.com/oauth/token?grant_type=authorization_code&client_id=44aa6888-7a4c-4612-a9d2-e51f495a75e3&client_secret=544af709-2de9-48cc-8f2c-d26937fa792d&redirect_uri=https%3A%2F%2Fgraph.api.smartthings.com%2Foauth%2Fcallback&scope=app&code=MQlSbh
+
+
+//Acccess Token
+{
+access_token: "1d05c213-b333-40c9-99d4-15c8e65d68bd"
+expires_in: 1576799999
+scope: "app"
+token_type: "bearer"
+}

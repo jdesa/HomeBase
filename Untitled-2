@@ -1,0 +1,63 @@
+/**
+ *  First Test App
+ *
+ *  Copyright 2014 Jacqui De Sa & CK Ong
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ *  in compliance with the License. You may obtain a copy of the License at:
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed
+ *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
+ *  for the specific language governing permissions and limitations under the License.
+ *
+ */
+ 
+definition(
+    name: "First Test App",
+    namespace: "jdesa",
+    author: "Jacqui De Sa & CK Ong",
+    description: "First Test App for PennApps to get used to SmartThings",
+    category: "",
+    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
+    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png")
+
+//What do we want this app to do? As a test, just see if we can turn on a phone charger connected to the switch when the door opens.
+
+//Turn on Media Center (iPad) when you enter a room.
+
+preferences {
+	section("Which door do you want to link?") {
+		input "doorName", "capability.contactSensor"
+    }
+    section("Which switch do you want to link?"){
+    	input "switchName", "capability.switch" //door — ["closed", "open", "closing", "unknown", "opening"]
+	}
+}
+
+def installed() {
+	log.debug "Installed with settings: ${settings}"
+
+	initialize()
+    subscribe("doorName", "contact", contactHandler)
+    subscribe("switchName", "switch", switchHandler)
+}
+
+def updated() {
+	log.debug "Updated with settings: ${settings}"
+
+	unsubscribe()
+	initialize()
+    subscribe("doorName", "contact", contactHandler)
+    subscribe("switchName", "switch", switchHandler)
+}
+
+def initialize() {
+
+
+	// TODO: subscribe to attributes, devices, locations, etc.
+}
+
+def contactHandler(){
+}
