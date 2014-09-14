@@ -1,3 +1,6 @@
+var container = $('.index'),
+    scrollTo = $('#about');
+
 function ajaxCall() {
     $.ajax({
   type: "GET",
@@ -15,9 +18,21 @@ function ajaxCall() {
 
     
 $(document).keypress(function(e) {
+    console.log(e.which);
   if(e.which == 13) {
+      console.log(e.which);
       console.log("ENTER PRESSED");
       ajaxCall();
   }
+    if(e.which == 115) {
+        console.log("s pressed");
+        container.animate({
+    scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+});
+    }
 });
     
+
+
+
+
