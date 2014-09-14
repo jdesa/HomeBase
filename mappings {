@@ -1,0 +1,8 @@
+mappings {
+  path("/switch") {
+    action: [
+      GET: "getSwitch",
+      PUT: "setSwitch"
+    ]
+  }
+}
