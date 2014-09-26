@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return render_template('index.html')
-'''
+
 #checks the status of a smartthings device
 @app.route("/status")
 def status():
@@ -25,7 +25,7 @@ def control():
     print "Hamster2"
     return "Hamster3"
 
-'''
+
 #return flask.jsonify(**f)
 
 if __name__ == "__main__":
