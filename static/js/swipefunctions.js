@@ -46,7 +46,24 @@ $(document).keypress(function(e) {
 });
     }
 });
-    
+
+
+function toggleLamp() {
+    console.log("click!");
+    var lamp = $("#lamp");
+    if (lamp.hasClass("lamp_off")) {
+        console.log("lamp off");
+        lamp.removeClass("lamp_off");
+        lamp.addClass("lamp_on");
+        lamp.attr("src","../static/img/flamp%20on.png");
+    }
+    else {
+        console.log("lamp on");
+        lamp.addClass("lamp_off");
+        lamp.removeClass("lamp_on");
+        lamp.attr("src","../static/img/flamp%20off.png");
+    }
+}
 
 
 

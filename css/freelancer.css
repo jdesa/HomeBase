@@ -193,6 +193,10 @@ header .intro-text .skills {
     border: 0;
 }
 
+.devices {
+    height: 50vh;
+}
+
 section {
     padding: 100px 0;
 }

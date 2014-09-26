@@ -292,6 +292,11 @@ section.success {
     background: #fff;
 }
 
+#devices {
+    height: 300px;
+    width: auto;
+}
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
