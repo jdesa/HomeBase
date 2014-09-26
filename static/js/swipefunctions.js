@@ -37,7 +37,7 @@ $(document).keypress(function(e) {
   if(e.which == 13) {
       console.log(e.which);
       console.log("ENTER PRESSED");
-      ajaxCall();
+      ajaxGet();
   }
     if(e.which == 115) {
         console.log("s pressed");
